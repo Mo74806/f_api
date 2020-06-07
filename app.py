@@ -1,7 +1,5 @@
 
-from PIL import Image
 
-import numpy as np
 from flask import Flask, render_template, request, jsonify, send_file, make_response, send_from_directory
 
 
@@ -15,7 +13,7 @@ def mask_image():
     
 
 
-    return send_file("hello", as_attachment=True)
+    return "hello"
 
 if __name__ == "__main__":
     app.run(debug=True)
