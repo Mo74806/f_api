@@ -13,10 +13,10 @@ def mask_image():
     file1 = request.files['image']
     img = Image.open(file1)
 
-    save_image(out, "/ssiii1.png")
+    
 
 
-    return send_file("/ssiii1.png", as_attachment=True)
+    return send_file(img, as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True)
