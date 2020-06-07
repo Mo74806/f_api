@@ -10,13 +10,12 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def mask_image():
-    file1 = request.files['image']
-    img = Image.open(file1)
+    
 
     
 
 
-    return send_file(img, as_attachment=True)
+    return send_file("hello", as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True)
